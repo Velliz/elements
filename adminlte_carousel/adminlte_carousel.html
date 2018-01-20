@@ -1,0 +1,24 @@
+<div {!TagId} class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <!--{!Indicator}-->
+        <li {!DataTarget} {!SlideTo} class="{!IsActive}"></li>
+        <!--{/Indicator}-->
+    </ol>
+    <div class="carousel-inner">
+        <!--{!Indicator}-->
+        <div class="item {!IsActive}">
+            <img src="{!ImgSrc}" width="100%" alt="{!ImgCaption}">
+
+            <div class="carousel-caption">
+                {!ImgCaption}
+            </div>
+        </div>
+        <!--{/Indicator}-->
+    </div>
+    <a class="left carousel-control" {!TagHref} data-slide="prev">
+        <span class="fa fa-angle-left"></span>
+    </a>
+    <a class="right carousel-control" {!TagHref} data-slide="next">
+        <span class="fa fa-angle-right"></span>
+    </a>
+</div>
