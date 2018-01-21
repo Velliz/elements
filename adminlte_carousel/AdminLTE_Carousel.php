@@ -23,8 +23,8 @@ class AdminLTE_Carousel extends Parts
     public function Parse()
     {
         foreach ($this->data['Indicator'] as $key => $val) {
-            $val['SlideTo'] = sprintf('data-slide-to="%s"', $key);
-            $val['DataTarget'] = sprintf('data-target="#%s"', $this->data['Tags']);
+            $val['SlideTo'] = $key;
+            $val['DataTarget'] = $this->data['Tags'];
             if ($key === 0) {
                 $val['IsActive'] = 'active';
             } else {
@@ -32,8 +32,8 @@ class AdminLTE_Carousel extends Parts
             }
             $this->data['Indicator'][$key] = $val;
         }
-        $this->data['TagId'] = sprintf('id="%s"', $this->data['Tags']);
-        $this->data['TagHref'] = sprintf('href="#%s"', $this->data['Tags']);
+        $this->data['TagId'] = $this->data['Tags'];
+        $this->data['TagHref'] = $this->data['Tags'];
 
         $this->pte->SetValue($this->data);
         $this->pte->SetHtml(AdminLTE_Carousel::class . '.html');

@@ -39,7 +39,7 @@ class AdminLTE_InfoBox extends Parts
 
     public function SetProgressBar($number)
     {
-        $this->data['UseProgress']['ProgressBar'] = str_replace('{?}', $number, 'style="width: {?}%"');
+        $this->data['UseProgress']['ProgressBar'] = str_replace('{?}', $number, ' style="width: {?}%" ');
     }
 
     public function SetProgressDescription($desc)

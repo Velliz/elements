@@ -1,7 +1,7 @@
-<div {!TagId} class="carousel slide" data-ride="carousel">
+<div id="{!TagId}" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
         <!--{!Indicator}-->
-        <li {!DataTarget} {!SlideTo} class="{!IsActive}"></li>
+        <li data-target="#{!DataTarget}" data-slide-to="{!SlideTo}" class="{!IsActive}"></li>
         <!--{/Indicator}-->
     </ol>
     <div class="carousel-inner">
@@ -15,10 +15,10 @@
         </div>
         <!--{/Indicator}-->
     </div>
-    <a class="left carousel-control" {!TagHref} data-slide="prev">
+    <a class="left carousel-control" href="#{!TagHref}" data-slide="prev">
         <span class="fa fa-angle-left"></span>
     </a>
-    <a class="right carousel-control" {!TagHref} data-slide="next">
+    <a class="right carousel-control" href="#{!TagHref}" data-slide="next">
         <span class="fa fa-angle-right"></span>
     </a>
 </div>
