@@ -26,7 +26,7 @@ class AdminLTE_Description extends Parts
     public function Parse()
     {
         $this->pte->SetValue($this->data);
-        $this->pte->SetHtml(AdminLTE_Description::class . '.html');
+        $this->pte->SetHtml(ROOT . AdminLTE_Description::class . '.html');
         return $this->pte->Output();
     }
 

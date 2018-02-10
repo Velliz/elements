@@ -58,7 +58,7 @@ class AdminLTE_SmallBox extends Parts
     public function Parse()
     {
         $this->pte->SetValue($this->data);
-        $this->pte->SetHtml(AdminLTE_SmallBox::class . '.html');
+        $this->pte->SetHtml(ROOT . AdminLTE_SmallBox::class . '.html');
         return $this->pte->Output();
     }
 

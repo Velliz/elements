@@ -64,7 +64,7 @@ class AdminLTE_InfoBox extends Parts
     public function Parse()
     {
         $this->pte->SetValue($this->data);
-        $this->pte->SetHtml(AdminLTE_InfoBox::class . '.html');
+        $this->pte->SetHtml(ROOT . AdminLTE_InfoBox::class . '.html');
         return $this->pte->Output();
     }
 

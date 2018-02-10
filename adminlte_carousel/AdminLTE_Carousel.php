@@ -36,7 +36,7 @@ class AdminLTE_Carousel extends Parts
         $this->data['TagHref'] = $this->data['Tags'];
 
         $this->pte->SetValue($this->data);
-        $this->pte->SetHtml(AdminLTE_Carousel::class . '.html');
+        $this->pte->SetHtml(ROOT . AdminLTE_Carousel::class . '.html');
         return $this->pte->Output();
     }
 

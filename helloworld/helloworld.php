@@ -13,7 +13,7 @@ class helloworld extends Parts
     public function Parse()
     {
         $this->pte->SetValue($this->data);
-        $this->pte->SetHtml(helloworld::class . '.html');
+        $this->pte->SetHtml(ROOT . helloworld::class . '.html');
         return $this->pte->Output();
     }
 
