@@ -2,8 +2,6 @@
 vendor/
 composer.lock
 puko.php
-
-vendor/
 node_modules/
 npm-debug.log
 
